@@ -1,76 +1,79 @@
 🌾 Rice-Weed Classification using MobileNetV2
+<p align="center"> <img src="a.jpeg" alt="Project Preview" width="600"/> </p> <p align="center"> <b>Deep Learning | MobileNetV2 | Precision Agriculture</b> </p>
 📝 Abstract
 
-This project presents a deep learning approach for rice-weed classification using MobileNetV2 with transfer learning. Trained on 3,632 images across 11 classes, the model achieved an impressive 95.44% test accuracy, demonstrating strong potential for precision agriculture by distinguishing rice plants from various weed species.
+This project applies MobileNetV2 with transfer learning for rice-weed classification.
+Trained on 3,632 images across 11 classes, the model achieved:
 
-✨ Key Highlights
+✅ 95.44% Test Accuracy
+✅ Stable Generalization
+✅ Fast & Efficient Deployment
 
-High Accuracy – Test accuracy of 95.44% with stable generalization.
+✨ Features
 
-Efficient & Lightweight – MobileNetV2 enables deployment on mobile/embedded devices.
+📊 High Accuracy – 95.44% test accuracy
 
-Fast Training – Transfer learning reduces training time significantly.
+⚡ Lightweight Model – Runs on mobile/edge devices
 
-Confident Predictions – Example: Classified leaf1.jpg with 92.21% confidence.
+⏱️ Quick Training – Leveraging transfer learning
+
+🎯 Confident Predictions – Up to 92.21% confidence on new samples
 
 📊 Dataset & Results
+Split	Images
+Training	2,901
+Validation	358
+Test	373
+Total	3,632
 
-Dataset Size: 3,632 images (11 classes)
+Performance Metrics:
 
-Split: 2,901 train | 358 validation | 373 test
+🏋️ Training Accuracy: 96.07%
 
-Performance:
+🔍 Validation Accuracy: 95.81%
 
-Training Accuracy: 96.07%
+🧪 Test Accuracy: 95.44%
 
-Validation Accuracy: 95.81%
+📉 Test Loss: 0.1191
 
-Test Accuracy: 95.44%
-
-Test Loss: 0.1191
-
+<p align="center"> <img src="confusion_matrix_normalized.png" alt="Confusion Matrix" width="450"/> </p>
 📂 Project Structure
+📁 Rice-Weed-Classifier
+ ├── train_model.py              # Train the model
+ ├── evaluate_model.py           # Evaluate performance
+ ├── predict.py                  # Predict new images
+ ├── split_dataset.py            # Dataset preparation
+ ├── rice_weed_classifier_model.h5 # Trained model
+ ├── confusion_matrix_normalized.png
+ ├── roc_curves.png
+ ├── bar_per_class_accuracy.png
+ └── scatter_confidence.png
 
-train_model.py – Train the model
-
-evaluate_model.py – Evaluate performance
-
-predict.py – Predict on new images
-
-split_dataset.py – Dataset preparation
-
-rice_weed_classifier_model.h5 – Trained model
-
-Visualization outputs: confusion matrix, ROC curves, per-class accuracy, confidence plots
-
-🚀 Usage
-
-Clone the repository:
-
+🚀 Getting Started
+🔧 Installation
 git clone https://github.com/Devansh-Bansal-AI/Rice-Weed-Classifier
 cd Rice-Weed-Classifier
 pip install -r requirements.txt
 
-
-Run prediction:
-
+📸 Prediction
 python predict.py --image_path path/to/image.jpg
 
-
-Evaluate model:
-
+🧪 Evaluation
 python evaluate_model.py
 
-📈 Future Scope
+📈 Future Work
 
-Real-time deployment on mobile devices
+📱 Real-time mobile deployment
 
-Drone integration for large-scale monitoring
+🚁 Drone-based agricultural monitoring
 
-Object detection for precise weed localization
+🔍 Object detection for weed localization
 
-Expanded datasets with regional weed species
+🌍 Expanding dataset with regional species
 
 👨‍💻 Author
 
-Devansh Bansal – Student, VIT Bhopal University
+Devansh Bansal
+Student, VIT Bhopal University
+
+<p align="center"> ⭐ If you found this project useful, don’t forget to star the repo! ⭐ </p>
