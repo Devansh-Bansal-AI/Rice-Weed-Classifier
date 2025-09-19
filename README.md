@@ -36,7 +36,6 @@ Performance Metrics:
 
 📉 Test Loss: 0.1191
 
-<p align="center"> <img src="confusion_matrix_normalized.png" alt="Confusion Matrix" width="450"/> </p>
 📂 Project Structure
 📁 Rice-Weed-Classifier
  ├── train_model.py              # Train the model
