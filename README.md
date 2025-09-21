@@ -1,120 +1,78 @@
 🌾 Rice-Weed Classification using MobileNetV2
-This image can be changed to a visually appealing project image or a representative screenshot.
-
+<p align="center"> <img src="a.jpeg" alt="Project Preview" width="600"/> </p> <p align="center"> <b>Deep Learning | MobileNetV2 | Precision Agriculture</b> </p>
 📝 Abstract
-This project implements a deep learning solution for rice-weed classification using transfer learning with the MobileNetV2 architecture. The system achieved an exceptional test accuracy of 
 
-95.44% on a dataset of 3,632 images across 11 distinct classes. This demonstrates the model's effective performance for precision agriculture applications by successfully distinguishing between rice plants and various weed species.
+This project applies MobileNetV2 with transfer learning for rice-weed classification.
+Trained on 3,632 images across 11 classes, the model achieved:
 
+✅ 95.44% Test Accuracy
+✅ Stable Generalization
+✅ Fast & Efficient Deployment
 
-✨ Key Features
+✨ Features
 
-High Accuracy: The model shows excellent performance with a final test accuracy of 95.44%.
+📊 High Accuracy – 95.44% test accuracy
 
+⚡ Lightweight Model – Runs on mobile/edge devices
 
-Efficient Architecture: The MobileNetV2 architecture is efficient and suitable for mobile and embedded devices.
+⏱️ Quick Training – Leveraging transfer learning
 
+🎯 Confident Predictions – Up to 92.21% confidence on new samples
 
-Fast Training: The transfer learning approach significantly reduces the training time while maintaining high accuracy.
+📊 Dataset & Results
+Split	Images
+Training	2,901
+Validation	358
+Test	373
+Total	3,632
 
+Performance Metrics:
 
-Robust Generalization: The model shows stable performance across training epochs and generalizes well to unseen data.
+🏋️ Training Accuracy: 96.07%
 
+🔍 Validation Accuracy: 95.81%
 
+🧪 Test Accuracy: 95.44%
 
-Confident Predictions: The model was able to classify new images with a very high confidence score of 92.21%.
-
-📊 Performance and Architecture
-Dataset Information
-The dataset used for this project consists of rice and weed images from a public source. You can access the dataset here: Rice and Weeds Image Dataset.
-
-The model was trained on a dataset of 3,632 images  with the following distribution:
-
-Dataset Split	Number of Images
-Training Set	2901
-Validation Set	358
-Test Set	373
-Total Classes	11
-Training Results
-The model was trained for 10 epochs and showed rapid improvement in accuracy.
-
-Metric	Result
-Final Training Accuracy	
-96.07% 
-
-Final Validation Accuracy	
-95.81% 
-
-Final Test Accuracy		
-95.44% 
-
-Test Loss	
-0.1191 
+📉 Test Loss: 0.1191
 
 📂 Project Structure
-train_model.py: Script to train the deep learning model.
-
-evaluate_model.py: Script to evaluate the trained model's performance on the test set.
-
-predict.py: Script to make predictions on new images.
-
-split_dataset.py: Utility to split the dataset into training, validation, and test sets.
-
-rice_weed_classifier_model.h5: The trained MobileNetV2 model file.
-
-confusion_matrix_normalized.png: Visual representation of the model's classification performance.
-
-roc_curves.png: Receiver Operating Characteristic curves for multi-class classification.
-
-bar_per_class_accuracy.png: Bar chart showing the accuracy for each class.
-
-scatter_confidence.png: Scatter plot of prediction confidence.
+📁 Rice-Weed-Classifier
+ ├── train_model.py              # Train the model
+ ├── evaluate_model.py           # Evaluate performance
+ ├── predict.py                  # Predict new images
+ ├── split_dataset.py            # Dataset preparation
+ ├── rice_weed_classifier_model.h5 # Trained model
+ ├── confusion_matrix_normalized.png
+ ├── roc_curves.png
+ ├── bar_per_class_accuracy.png
+ └── scatter_confidence.png
 
 🚀 Getting Started
-Prerequisites
-Python 3.13 or newer 
+🔧 Installation
+git clone https://github.com/Devansh-Bansal-AI/Rice-Weed-Classifier
+cd Rice-Weed-Classifier
+pip install -r requirements.txt
 
-Deep Learning Framework: TensorFlow/Keras 
+📸 Prediction
+python predict.py --image_path path/to/image.jpg
 
-Other dependencies can be installed using a requirements.txt file.
-
-Installation
-Clone this repository:
-
-Bash
-
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Install the required Python libraries.
-
-Usage
-Making a Prediction
-Use the predict.py script to classify a new image. The model correctly classified a test image named 
-
-leaf1.jpg as W_CL_11_Synedrella nodiflora with 92.21% confidence in a validation experiment.
-
-Bash
-
-python predict.py --image_path path/to/your/image.jpg
-Evaluating the Model
-To evaluate the model on the test set, run the evaluate_model.py script.
-
-Bash
-
+🧪 Evaluation
 python evaluate_model.py
+
 📈 Future Work
 
-Real-time Deployment: Implement the model on mobile devices for field use by farmers.
+📱 Real-time mobile deployment
 
+🚁 Drone-based agricultural monitoring
 
-Drone Integration: Integrate the system with drone-based imaging for large-scale agricultural monitoring.
+🔍 Object detection for weed localization
 
-
-Object Detection: Implement object detection techniques for precise localization of weeds within an image.
-
-
-Expand Dataset: Add more regional weed species and crops to the dataset to improve generalization.
+🌍 Expanding dataset with regional species
 
 👨‍💻 Author
 
-Devansh Bansal Student, VIT Bhopal University 
+Devansh Bansal
+Student, VIT Bhopal University
+
+<p align="center"> ⭐ If you found this project useful, don’t forget to star the repo! ⭐ </p>
